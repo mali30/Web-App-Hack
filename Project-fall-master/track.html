@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="track.css">
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="welcome.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+        <li> <a href="order.html">Order</a> </li>
+      <li><a href="track.html">Track</a></li>
+      <li> <a href="welcome.html">Logout</a> </li>
+    </ul>
+
+
+        <div id="googleMap" style="width:85%;height:760px;;"></div>
+
+        <script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(33.7490, -84.3880),
+                    zoom: 15,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=//AIzaSyBV0pWFHHFphjyazYOFXRJ8-RnRP23-pRk&callback=myMap"></script>
+
+
+
+        <br>
+        <div class="signout"><a href="">Sign Out</a></div>
+
+  </body>
+</html>
